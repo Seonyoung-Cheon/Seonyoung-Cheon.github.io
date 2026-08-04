@@ -1,0 +1,18 @@
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="logo" href="{{ '/' | relative_url }}#home" aria-label="Go to home">{{ site.initials }}</a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="{{ '/' | relative_url }}#about">About</a></li>
+      <li><a href="{{ '/' | relative_url }}#news">News</a></li>
+      <li><a href="{{ '/' | relative_url }}#publications">Publication</a></li>
+      <li><a href="{{ '/' | relative_url }}#recognition">Recognition</a></li>
+      <li><a href="{{ '/' | relative_url }}#blog">Blog</a></li>
+      <li><a class="button button-small" href="mailto:{{ site.email }}">Contact</a></li>
+    </ul>
+  </nav>
+</header>

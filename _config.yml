@@ -1,0 +1,31 @@
+title: Your Name
+initials: YN
+email: your.email@example.com
+description: A personal portfolio website featuring an about section, news, publications, recognition, and blog posts.
+url: ""
+baseurl: ""
+
+profile:
+  role: Researcher / Developer / Writer
+  affiliation: Your University or Lab
+  location: Seoul, Korea
+  interests: AI, HCI, Data Science
+
+social:
+  github: https://github.com/your-id
+  scholar: https://scholar.google.com
+  linkedin: https://linkedin.com
+
+collections:
+  news:
+    output: false
+  publications:
+    output: false
+  recognitions:
+    output: false
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+markdown: kramdown
+permalink: pretty
