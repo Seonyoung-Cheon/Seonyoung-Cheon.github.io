@@ -1,6 +1,15 @@
 # Personal Homepage
 
-A personal homepage built with GitHub Pages and Jekyll. The site is structured so that most content can be edited by writing Markdown files.
+A personal homepage built with GitHub Pages and Jekyll. The site is organized as separate pages, and most content can be edited by writing Markdown files.
+
+## Pages
+
+- `index.md`: Home
+- `about.md`: About and News
+- `publications.md`: Publications
+- `recognition.md`: Recognition
+- `blog.md`: Blog list
+- `_posts/*.md`: Individual blog posts
 
 ## What should I edit?
 
@@ -14,13 +23,15 @@ initials: YN
 email: your.email@example.com
 ```
 
-### 2. Homepage and About section
+### 2. Homepage
 
-Edit the main introduction and About section in `index.md`.
+Edit the homepage introduction in `index.md`.
 
-### 3. Add News items
+### 3. About and News
 
-Add Markdown files to the `_news/` folder.
+Edit the About section text in `about.md`.
+
+Add News items by creating Markdown files in the `_news/` folder.
 
 Example: `_news/2026-08-new-paper.md`
 
@@ -33,7 +44,7 @@ label: Aug 2026
 My new paper was accepted to a conference.
 ```
 
-### 4. Add Publications
+### 4. Publications
 
 Add Markdown files to the `_publications/` folder.
 
@@ -53,7 +64,7 @@ links:
 ---
 ```
 
-### 5. Add Recognition items
+### 5. Recognition
 
 Add Markdown files to the `_recognitions/` folder.
 
@@ -68,7 +79,7 @@ year: 2026
 Describe the organization, presentation, award, or activity.
 ```
 
-### 6. Add Blog posts
+### 6. Blog posts
 
 Add Markdown files to `_posts/` using the `YYYY-MM-DD-title.md` format.
 
@@ -87,7 +98,11 @@ Write the body in Markdown.
 
 ```text
 _config.yml              # Site-wide settings
-index.md                 # Homepage content
+index.md                 # Home page
+about.md                 # About and News page
+publications.md          # Publications page
+recognition.md           # Recognition page
+blog.md                  # Blog list page
 _news/*.md               # News items
 _publications/*.md       # Publication items
 _recognitions/*.md       # Recognition items
@@ -110,4 +125,4 @@ assets/images/           # Image files
 
 ## Note
 
-The site is not completely HTML-free. Jekyll still uses HTML templates in `_layouts` and `_includes`. However, day-to-day content updates can be handled through `index.md`, `_news`, `_publications`, `_recognitions`, and `_posts`.
+The site is not completely HTML-free. Jekyll still uses HTML templates in `_layouts` and `_includes`. However, day-to-day content updates can be handled through Markdown files such as `index.md`, `about.md`, `_news`, `_publications`, `_recognitions`, and `_posts`.

@@ -154,9 +154,23 @@ a:hover {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.75fr);
+  grid-template-columns: minmax(300px, 0.75fr) minmax(0, 1.45fr);
   gap: 56px;
   align-items: center;
+}
+
+.hero-grid-profile-left .profile-card {
+  justify-self: start;
+  width: 100%;
+}
+
+.page-section {
+  min-height: calc(100vh - 129px);
+  padding-top: 112px;
+}
+
+.page-title {
+  font-size: clamp(2.7rem, 7vw, 5.2rem);
 }
 
 .eyebrow {
@@ -491,6 +505,11 @@ h3 {
   }
 
   .hero {
+    padding-top: 84px;
+  }
+
+  .page-section {
+    min-height: auto;
     padding-top: 84px;
   }
 
